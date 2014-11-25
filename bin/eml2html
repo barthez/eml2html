@@ -1,0 +1,33 @@
+#! /usr/bin/env ruby
+
+require 'eml2html'
+
+class CLI
+  USAGE = <<-CONTENT
+  Usage:
+    eml2html filename.eml
+CONTENT
+
+  def initialize(args)
+    if args.length < 1
+      puts USAGE
+      exit
+    end
+
+    filename = args.shift
+
+    unless File.exists?(filename)
+      puts "File '#{filename}' doesn't exist!"
+      exit
+    end
+
+    @converter = Eml2Html::Converter.new(filename)
+  end
+
+  def run!
+    @converter.save_files!
+    puts "Done!"
+  end
+end
+
+CLI.new(ARGV).run!
