@@ -23,22 +23,17 @@ module Eml2Html
     end
 
     def save_txt
-      print "Saving #{filename(:txt)}..."
       File.write(filename(:txt), text_body)
-      puts "done."
     end
 
     def save_html
-      print "Saving #{filename(:html)}..."
       File.write(filename(:html), html_body)
       each_attachment do |name, content|
         File.write(name, content)
       end
-      puts "done."
     end
 
     def save_zip(options = {})
-      print "Saving #{filename(:zip)}..."
       Zip::File.open(filename(:zip), Zip::File::CREATE) do |zipfile|
         if options[:include_html]
           zipfile.get_output_stream(filename(:html)) do |out|
@@ -58,7 +53,6 @@ module Eml2Html
           end
         end
       end
-      puts "done."
     end
 
     private
