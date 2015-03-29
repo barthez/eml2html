@@ -31,6 +31,9 @@ module Eml2Html
     def save_html
       print "Saving #{filename(:html)}..."
       File.write(filename(:html), html_body)
+      each_attachment do |name, content|
+        File.write(name, content)
+      end
       puts "done."
     end
 
@@ -79,15 +82,23 @@ module Eml2Html
     end
 
     def read_attachments
-      @attachments = @message.parts.map do |part|
-        next if part.multipart?
-        name = part['Content-Type'].to_s.split('; ').last[/^filename="(.*)"$/, 1]
-        Attachment.new(part.cid, name, part.body.to_s)
+      @attachments = @message.parts.flat_map do |part|
+        if part.multipart?
+          part.parts.map do |part|
+            name = part['Content-Type'].filename
+            next unless name
+            Attachment.new(part.cid, name, part.body.to_s)
+          end
+        else
+          name = part['Content-Type'].filename
+          next unless name
+          Attachment.new(part.cid, name, part.body.to_s)
+        end
       end.compact
     end
 
     def replace_images_src(html)
-      html.gsub(/(?<=src=['"])(cid:)([^'"]+)(?=['"])/) do |match|
+      html.gsub(/(?<=src=['"])cid:[^'"]+(?=['"])/) do |match|
         cid = match.sub(/^cid:/, '')
         @attachments.find{|a| a.cid == cid}.name
       end
