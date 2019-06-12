@@ -67,6 +67,7 @@ module Eml2Html
           the_body.gsub(a.name, a.to_data_url)
         end
       end
+      the_body
     end
 
     private
