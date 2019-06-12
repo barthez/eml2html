@@ -3,9 +3,10 @@ require 'zip'
 
 module Eml2Html
   class Attachment
-    attr_reader :cid, :name, :content
+    attr_reader :cid, :name, :content, :cids_in_body
     def initialize(cid, name, content)
       @cid, @name, @content = cid, name, content
+      @cids_in_body = []
     end
   end
 
@@ -55,8 +56,18 @@ module Eml2Html
       end
     end
 
-    def attachments
-      @attachments
+    def get_attachments(include_in_doc=false)
+      attachments = []
+      if include_in_doc
+        attachments = @attachments
+      else
+        @attachments.each do |a|
+          unless @cids_in_body.includes(a.cid)
+            attachments.push(a)
+          end
+        end
+      end
+      attachments
     end
 
     def get_html
@@ -111,6 +122,7 @@ module Eml2Html
     def replace_images_src(html)
       html.gsub(/(?<=src=['"])cid:[^'"]+(?=['"])/) do |match|
         cid = match.sub(/^cid:/, '')
+        cids_in_body.push(cid)
         @attachments.find{|a| a.cid == cid}.name
       end
     end
