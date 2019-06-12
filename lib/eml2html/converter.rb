@@ -59,7 +59,7 @@ module Eml2Html
       end
     end
 
-    def get_html(with_data_urls)
+    def get_html(with_data_urls=false)
       the_body = html_body
 
       if with_data_urls
