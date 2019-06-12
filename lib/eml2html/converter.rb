@@ -69,6 +69,7 @@ module Eml2Html
           return content
         end
       end
+      nil
     end
 
     private
