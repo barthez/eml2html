@@ -59,15 +59,16 @@ module Eml2Html
       end
     end
 
-    def get_html(with_data_urls=false)
-      the_body = html_body
+    def get_html
+      html_body
+    end
 
-      if with_data_urls
-        @attachments.each do |a|
-          the_body.gsub(a.name, a.to_data_url)
+    def get_attachment(file_name)
+      each_attachment do |name, content|
+        if name == file_name
+          return content
         end
       end
-      the_body
     end
 
     private
