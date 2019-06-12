@@ -7,6 +7,10 @@ module Eml2Html
     def initialize(cid, name, content)
       @cid, @name, @content = cid, name, content
     end
+
+    def to_data_url
+      'data:'+self.cid+';base64,'+Base64.encode64(self.content)
+    end
   end
 
   class Converter
@@ -51,6 +55,16 @@ module Eml2Html
           zipfile.get_output_stream(name) do |out|
             out << content
           end
+        end
+      end
+    end
+
+    def get_html(with_data_urls)
+      the_body = html_body
+
+      if with_data_urls
+        @attachments.each do |a|
+          the_body.gsub(a.name, a.to_data_url)
         end
       end
     end
