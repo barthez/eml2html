@@ -7,10 +7,6 @@ module Eml2Html
     def initialize(cid, name, content)
       @cid, @name, @content = cid, name, content
     end
-
-    def to_data_url
-      'data:'+self.cid+';base64,'+Base64.encode64(self.content)
-    end
   end
 
   class Converter
