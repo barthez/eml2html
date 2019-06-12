@@ -55,6 +55,10 @@ module Eml2Html
       end
     end
 
+    def attachments
+      @attachments
+    end
+
     def get_html
       html_body
     end
