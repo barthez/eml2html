@@ -3,10 +3,9 @@ require 'zip'
 
 module Eml2Html
   class Attachment
-    attr_reader :cid, :name, :content, :cids_in_body
+    attr_reader :cid, :name, :content
     def initialize(cid, name, content)
       @cid, @name, @content = cid, name, content
-      @cids_in_body = []
     end
   end
 
@@ -14,6 +13,7 @@ module Eml2Html
     def initialize(message)
       @message = Mail.read(message)
       @basename = File.basename(message, '.eml')
+      @cids_in_body = []
       read_attachments
     end
 
