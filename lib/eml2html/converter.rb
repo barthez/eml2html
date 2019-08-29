@@ -122,7 +122,7 @@ module Eml2Html
     def replace_images_src(html)
       html.gsub(/(?<=src=['"])cid:[^'"]+(?=['"])/) do |match|
         cid = match.sub(/^cid:/, '')
-        cids_in_body.push(cid)
+        @cids_in_body.push(cid)
         attachment = @attachments.find{|a| a.cid == cid }
 	if attachment
 	  attachment.name
