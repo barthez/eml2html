@@ -123,7 +123,12 @@ module Eml2Html
       html.gsub(/(?<=src=['"])cid:[^'"]+(?=['"])/) do |match|
         cid = match.sub(/^cid:/, '')
         cids_in_body.push(cid)
-        @attachments.find{|a| a.cid == cid}.name
+        attachment = @attachments.find{|a| a.cid == cid }
+	if attachment
+	  attachment.name
+        else
+          ''
+        end
       end
     end
   end
