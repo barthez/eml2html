@@ -56,31 +56,31 @@ module Eml2Html
       end
     end
 
-    def get_attachments(include_in_doc=false)
-      attachments = []
+    def attachments(include_in_doc=false)
+      rtn_attachments = []
       if include_in_doc
-        attachments = @attachments
+        rtn_attachments = @attachments
       else
         @attachments.each do |a|
           unless @cids_in_body.includes(a.cid)
-            attachments.push(a)
+            rtn_attachments.push(a)
           end
         end
       end
-      attachments
+      rtn_attachments
     end
 
-    def get_html
-      html_body
-    end
-
-    def get_attachment(file_name)
+    def attachment(file_name)
       each_attachment do |name, content|
         if name == file_name
           return content
         end
       end
       nil
+    end
+
+    def html_body
+      replace_images_src(@message.html_part.body.to_s)
     end
 
     private
@@ -91,10 +91,6 @@ module Eml2Html
 
     def text_body
       @message.text_part.body.to_s
-    end
-
-    def html_body
-      replace_images_src(@message.html_part.body.to_s)
     end
 
     def each_attachment
@@ -123,9 +119,9 @@ module Eml2Html
       html.gsub(/(?<=src=['"])cid:[^'"]+(?=['"])/) do |match|
         cid = match.sub(/^cid:/, '')
         @cids_in_body.push(cid)
-        attachment = @attachments.find{|a| a.cid == cid }
-	if attachment
-	  attachment.name
+        a = @attachments.find{|a| a.cid == cid }
+	if a
+	  a.name
         else
           ''
         end
