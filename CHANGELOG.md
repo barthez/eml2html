@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [0.0.5] - 2019-09-09
+
+### Fixed
+
+- `NoMethodError (undefined method 'includes' for Array)` (#3)
+- Email part filename may also be located in `Content-Disposition` header (#3)
+
 ## [0.0.4] - 2019-09-05
 
 ### Added
