@@ -62,7 +62,7 @@ module Eml2Html
         rtn_attachments = @attachments
       else
         @attachments.each do |a|
-          unless @cids_in_body.includes(a.cid)
+          unless @cids_in_body.include?(a.cid)
             rtn_attachments.push(a)
           end
         end
@@ -103,16 +103,17 @@ module Eml2Html
       @attachments = @message.parts.flat_map do |part|
         if part.multipart?
           part.parts.map do |part|
-            name = part['Content-Type'].filename
+            name = part['Content-Type'].filename || part['Content-Disposition']&.filename
             next unless name
             Attachment.new(part.cid, name, part.body.to_s)
           end
         else
-          name = part['Content-Type'].filename
+          name = part['Content-Type'].filename || part['Content-Disposition']&.filename
           next unless name
           Attachment.new(part.cid, name, part.body.to_s)
         end
       end.compact
+      html_body #populate the @cids_in_body array
     end
 
     def replace_images_src(html)

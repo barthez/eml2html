@@ -1,0 +1,136 @@
+Received: from BY5PR12MB3748.namprd12.prod.outlook.com
+Received: from BY5PR12MB3906.namprd12.prod.outlook.com (10.255.137.154) by
+Received: from BY5PR12MB3906.namprd12.prod.outlook.com
+Authentication-Results: example.com; dkim=none (message not signed)
+Content-Transfer-Encoding: binary
+From: "Person, bob" <person@example.com>
+To: "Inquiries" <Inquiries@example.com>
+Subject: FW: Communication Email
+Thread-Topic: Communication Email
+Thread-Index: AQHVXbPliIbE/GguY02AgunwjIShoqcQuF/ggAAFxdCAAVJoQA==
+Date: Thu, 29 Aug 2019 12:33:54 +0000
+Message-ID: <BY5PR12MB3906E1A8DE8DD910A75116B1C5A20@BY5PR12MB3906.namprd12.prod.outlook.com>
+References: <BWZBZTTBZ$UYZATTYYVWYAV@mail-out.via.act-on.net>
+In-Reply-To: <BN8PR12MB3044B7C87C86BE7617C36D96AFA30@BN8PR12MB3044.namprd12.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: <BY5PR12MB3906E1A8DE8DD910A75116B1C5A20@BY5PR12MB3906.namprd12.prod.outlook.com>
+msip_labels: MSIP_Label_807724ff-9999-494f-b257-05dacc46ac87_Enabled=True;
+x-dg-ref: PG1ldGE+PGF0IG5tPSJib2R5Lmh0bWwiIHA9ImM6XHVzZXJzXGVnbG9zdGVyXGFwcGRhdGFccm9hbWluZ1wwOWQ4NDliNi0zMmQzLTRhNDAtODVlZS02Yjg0YmEyOWUzNWJcbXNnc1xtc2ctM2UyYjcwMjktY2E1OS0xMWU5LWE5OWMtNGMzNDg4NjI3ZGQ4XGFtZS10ZXN0XDNlMmI3MDJiLWNhNTktMTFlOS1hOTljLTRjMzQ4ODYyN2RkOGJvZHkuaHRtbCIgc3o9IjExNDkxNSIgdD0iMTMyMTE1NTU2MjY2MDIyNjg1IiBoPSJPK2FVdEdmMHdwc25BaHkyc3FNQXpaYnhIekE9IiBpZD0iIiBibD0iMCIgYm89IjEiLz48L21ldGE+
+x-dg-rorf: MIME-Version: 1.0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: BY5PR12MB3906.namprd12.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-Originating-IP: [12.165.188.170]
+X-MS-Exchange-Organization-Network-Message-Id: 677ee198-3d14-4733-32cb-08d72c7d27eb
+X-MS-PublicTrafficType: Email
+Return-Path: person@example.com
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Aug 2019 12:33:55.0017
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Office365-Filtering-Correlation-Id: 677ee198-3d14-4733-32cb-08d72c7d27eb
+X-Microsoft-Antispam: BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600166)(711020)(4605104)(1401327)(2017052603328)(49563074)(7193020);SRVR:BY5PR12MB3748;
+X-MS-TrafficTypeDiagnostic: BY5PR12MB3748:
+X-MS-Exchange-PUrlCount: 28
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-Forefront-Antispam-Report: SFV:SKI;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:BY5PR12MB3748;H:BY5PR12MB3906.namprd12.prod.outlook.com;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Aug 2019 12:33:54.6815
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: e58c8e81-abd8-48a8-929d-eb67611b83bd
+X-MS-Exchange-CrossTenant-Network-Message-Id: 677ee198-3d14-4733-32cb-08d72c7d27eb
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: SguAapAOGHTt59uwiUjwC2FRdzoIGYiV9hEU48YnXB/0e0dlwoiaAd2ZkOvinCVT4C8eyXvxjAnjtwDVSYsAEbhTJVgghwBElAToCF6CFbs=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR12MB3748
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7950727
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2220.007
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(706158)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info: dMafteyPCFwdgcVA6/2kIoWOdGA0GWlE0XpkctcPBrQp70CrfXhiDPbOQdooy40qrKB6yZ6ID1K5D6LuSrBfZwGhsq2fdI5oTITT6uddR6Mjndi7P/ZfOwaXZKn4Bfdrt4SRkTRS47bLGjd+owyRM3ITXcI9yQTeO8C6lg/Sk+hewUHDiqmmViuExxqeCkS3uSyxX7ICk/kS6i6dwPlJ+x6MphB+uoGULuNJiHNBjtauqZwbqDO8G7d45AdF8Ifb5mSx1RELsUjS7FNghtvMnavZ3P9HklgLBioE2tnOkRQjc9Nz+C2KVBr8yWWmGrIXBWqAzGhBHJvXNnEcRdAXTEzo9gSOnamyaq5LvDXyhX5pVzSmlXVErKnYtVLP4fcGyhqQqIYDUCrXfHfd/HNdcgAm/ibT+nf7GHiGADBHD8AbZZLygjwy9RsJp7ubZfCW
+Priority: 0
+Content-Type: multipart/related; boundary="----_=_NextPart_001_18226df8.5d67c655"
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_18226df8.5d67c655
+Content-Type: multipart/alternative; boundary="----_=_NextPart_002_3f882116d9e0.5d67c655"
+
+
+------_=_NextPart_002_3f882116d9e0.5d67c655
+Content-Type: text/plain
+
+ 
+
+From: Communication <communications@example.com <mailto:communications@example.com> > 
+Sent: Wednesday, August 28, 2019 11:19 AM
+To: Person, Bill <Bill@example.com <mailto:Bill@example.com> >
+Subject: Communication Email
+
+ 
+
+
+Twitter!
+ 
+
+
+
+------_=_NextPart_002_3f882116d9e0.5d67c655
+Content-Type: text/html
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta name=Generator content="Microsoft Word 15 (filtered medium)"></head><body bgcolor=white lang=EN-US link=blue vlink=purple><p>Twitter!</p><img border=0 width=32 height=32 style='width:.3333in;height:.3333in' id="Picture_x0020_8" src="cid:image009.png@01D55D9B.4CED6CC0" alt=Twitter></body></html>
+
+------_=_NextPart_002_3f882116d9e0.5d67c655--
+
+
+
+------_=_NextPart_001_18226df8.5d67c655
+Content-Type: image/png
+Content-Disposition: attachment; filename="image009.png"
+Content-Transfer-Encoding: base64
+Content-ID: image009.png@01D55D9B.4CED6CC0
+
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0
+d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9i
+ZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2Vo
+aUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6
+bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5
+LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJk
+Zi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg
+eG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8i
+IHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5
+cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5j
+b20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRp
+ZDpjMTZjZDE4ZC1kYWQzLTQxNDQtYjI3YS00ODA0ZjM4YWFmYWYiIHhtcE1N
+OkRvY3VtZW50SUQ9InhtcC5kaWQ6MUJGQjVFNDFDOUNCMTFFNDhFMEI5NTNE
+Qzk3MDhBNDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUJGQjVFNDBD
+OUNCMTFFNDhFMEI5NTNEQzk3MDhBNDAiIHhtcDpDcmVhdG9yVG9vbD0iQWRv
+YmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVy
+aXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphYTkwYTFjZi05
+YWM1LTQ2MWMtYTA0YS0xMTdlZjY5MzZmOGYiIHN0UmVmOmRvY3VtZW50SUQ9
+InhtcC5kaWQ6YzE2Y2QxOGQtZGFkMy00MTQ0LWIyN2EtNDgwNGYzOGFhZmFm
+Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRh
+PiA8P3hwYWNrZXQgZW5kPSJyIj8+Z//T6gAAAsRJREFUeNq8V01oE1EQnjy2
+1jYGkdofS21IMQeh1UvroT2kWBGkECEURPBSCMRrbvXQgwjirb2KQi8FEcVD
+oPQgqRVsKXQPIhWFSGIRUiMVG0MsphKcWWbjmu7PS5PsB98h2dn55s17O2/G
+0/osA5IIIseQw8hBZADZzc9ySHK0hVSRa8iUjFNFwmYcGUGGkX4Lm35miH9v
+IxPIF8hVO+cemwwMIKPIaWQPHA1fkQvIx8h0LRmYQMaRk1AfKPA7yAvIOWSy
+2kCYvESpftAAcSMm2WfYKQBa+SwftEZjmH1PWAUwwGlvhrgxiDhrHQog2uC0
+221HtDqAcT7tbmGaNSsBROr41I76dUT0AIJmp/O/EnhMgNPzxMhp2Az1wMpo
+F8TOtGn/z/R77V4jzaDC5dVvZxk/54M+bwuEN3dNxZNXeqGr/V9JGe1th/sH
+ZXj0/geEfAq8Lvwxc0uaY0L21F/1n9BWV50NCs4obsT1gM9KvPJVCL5YbPGz
+VK6sbONaHyxePAVTHa2OQZ9/mXUyGVT4VrPFcm4fLmV/aQF4WwRMBU9qXLR5
+J71XkklsQBiuVEvcOOvVxGtB4aAsY9YtZKyefilCUc5hBR/3fkvZCW4mbEEH
+KfYmB+u4DTKgYOc+FWRMc4I7GUd04OmX3YblzwVIlaQylhHcRjni4c4+zL/9
+7rgVmXwJ7n7Iy+7UluAeTgozmNbIStYyCBK/vfFNdvUEVeEGctuqGlLhoWJD
+GOlsg6HO46ae6HzE1N1axElzTXD3mrCyIod0oPRiZFw9rfh5Kg+3Xu3A5fWa
+Vg6smdKbUroan7h4I1KzepM6Zr0OrHL36hYW9HbdWIiodV5yQXyJtQ61ZGlu
+ndUmiquskbbqiqlvv9ekIFT2nXQaTOh0Fhs0mBjTbjqYWE1GSS7R75o9mnkk
+pmOZ4dSsyNQ9nLoynv8VYADvOdpO4SLVRAAAAABJRU5ErkJggg==
+
+
+
+------_=_NextPart_001_18226df8.5d67c655--
